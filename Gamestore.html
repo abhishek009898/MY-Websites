@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GameHub Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #090e13;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid #39737a;
+    }
+
+    header h1 {
+      color: #53b2be;
+      font-size: 3.2em;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 18px;
+      gap: 25px;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ffffffdd;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e0ff;
+    }
+
+
+
+
+
+    .store {
+      max-width: 1400px;
+      margin: 50px auto;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .game-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      border: 1px solid #2a2a2a;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(70, 223, 50, 0.2);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #000000;
+    }
+
+    .game-card-content {
+      padding: 20px;
+    }
+
+    .game-card h3 {
+      color: #00e0ff;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+
+    .game-card p {
+      color: #cccccc;
+      font-size: 0.95em;
+    }
+
+    .more-button {
+      text-align: center;
+      margin: 40px 0;
+    }
+    
+    .more-button button {
+      background-color: #00e0ff;
+      color: #0e0e0e;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .more-button button:hover {
+      background-color: #212424;
+    }
+    .Free-button {
+        text-align: center;
+        margin: 40px 0;
+
+    }
+    .Free-button :hover{
+        background-color: #000000;
+    }
+     .Free-button button {
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: black;
+      border: none;
+      padding: 12px 30px;
+      font-size: .96em;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+     }
+
+    footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95em;
+      color: #999;
+      border-top: 4px solid #00e0ff;
+      margin-top: 60px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+   <h1>
+  GameHub Store
+</h1>
+
+  </header>
+
+  <nav>
+   <nav>
+  <a href="#" onclick="alert(');s ;">Home</a>
+  <a href="#" onclick="alert('कल आना'); ;">New Releases</a>
+  <a href="#" onclick="alert('कल आना'); ;">Top Rated</a>
+  <a href="#" onclick="alert('कल आना '); ;">Support</a>
+</nav>
+
+  </nav>
+
+  <div class="store">
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA 5">
+      <div class="game-card-content">
+        <h3>GTA 5</h3>
+        <p>Explore Los Santos in this open-world action-adventure classic full of heists, story, and online mayhem.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg" alt="Elden Ring">
+      <div class="game-card-content">
+        <h3>Elden Ring</h3>
+        <p>An epic fantasy RPG with challenging combat and an expansive open world crafted by FromSoftware.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Valorant_cover.jpg" alt="Valorant">
+      <div class="game-card-content">
+        <h3>Valorant</h3>
+        <p>A team-based tactical shooter by Riot Games with unique agents and abilities in competitive matches.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png" alt="Minecraft">
+      <div class="game-card-content">
+        <h3>Minecraft</h3>
+        <p>Build, mine, craft and explore endless worlds solo or with friends in this sandbox block-based adventure.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2">
+      <div class="game-card-content">
+        <h3>RDR 2</h3>
+        <p>Experience the life of an outlaw in a rich and detailed open world set in the American frontier.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike 2">
+      <div class="game-card-content">
+        <h3>Counter-Strike 2</h3>
+        <p>The iconic competitive shooter returns with Source 2 engine, improved visuals and tight gunplay.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src=https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tekken_8_cover_art.jpg/250px-Tekken_8_cover_art.jpg alt="Horizon Forbidden West">
+      <div class="game-card-content">
+        <h3>Tekken 8</h3>
+        <p>Join Aloy on a new adventure in a post-apocalyptic land filled with robotic creatures and secrets.</p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src=https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/250px-Witcher_3_cover_art.jpg alt="The Witcher 3" > 
+      <div class="game-card-content">
+        <h3>The Witcher 3</h3>
+        <p>Play as Geralt of Rivia in a beautifully written RPG filled with monsters, magic and tough choices.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-button">
+    <button onclick="alert('Phle Paise De')">More Games</button>
+  </div>
+   <div class="Free-button">
+    <button onclick="alert('Nothing is Free')">Free Games</button>
+  </div>
+
+  <footer>
+    &copy; 2025 GameHub Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
